@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-10T10:45:00.000Z" agent="ChatGPT" version="25.0.2" type="device">
+  <diagram id="tourism-agency-physical-er" name="Физическая ER-диаграмма">
+    <mxGraphModel dx="1900" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="920" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Физическая ER-диаграмма «Туристическая фирма (агентство)»" style="text;html=1;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#1f2937;" vertex="1" parent="1">
+          <mxGeometry x="250" y="25" width="1400" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Физическая схема: 6 таблиц, английские имена. Связи PK → FK привязаны к строкам полей." style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#4b5563;" vertex="1" parent="1">
+          <mxGeometry x="350" y="68" width="1200" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_client" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="60" y="155" width="280" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="client_header" value="Client" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.6;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="grp_client">
+          <mxGeometry x="0" y="0" width="280" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="client_client_id_key" value="PK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8edf3;strokeColor=#6c8ebf;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_client">
+          <mxGeometry x="0" y="36" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="client_client_id" value="client_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_client">
+          <mxGeometry x="58" y="36" width="222" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="client_last_name_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#6c8ebf;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_client">
+          <mxGeometry x="0" y="64" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="client_last_name" value="last_name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_client">
+          <mxGeometry x="58" y="64" width="222" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="client_first_name_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#6c8ebf;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_client">
+          <mxGeometry x="0" y="92" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="client_first_name" value="first_name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_client">
+          <mxGeometry x="58" y="92" width="222" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="client_phone_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#6c8ebf;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_client">
+          <mxGeometry x="0" y="120" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="client_phone" value="phone" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_client">
+          <mxGeometry x="58" y="120" width="222" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="client_email_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#6c8ebf;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_client">
+          <mxGeometry x="0" y="148" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="client_email" value="email" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_client">
+          <mxGeometry x="58" y="148" width="222" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_operator" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="60" y="575" width="300" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="operator_header" value="TourOperator" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.6;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="grp_operator">
+          <mxGeometry x="0" y="0" width="300" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="operator_operator_id_key" value="PK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8edf3;strokeColor=#d79b00;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_operator">
+          <mxGeometry x="0" y="36" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="operator_operator_id" value="operator_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_operator">
+          <mxGeometry x="58" y="36" width="242" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="operator_company_name_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#d79b00;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_operator">
+          <mxGeometry x="0" y="64" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="operator_company_name" value="company_name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_operator">
+          <mxGeometry x="58" y="64" width="242" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="operator_phone_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#d79b00;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_operator">
+          <mxGeometry x="0" y="92" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="operator_phone" value="phone" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_operator">
+          <mxGeometry x="58" y="92" width="242" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="operator_email_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#d79b00;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_operator">
+          <mxGeometry x="0" y="120" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="operator_email" value="email" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_operator">
+          <mxGeometry x="58" y="120" width="242" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_tour" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="470" y="550" width="345" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_header" value="Tour" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.6;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="grp_tour">
+          <mxGeometry x="0" y="0" width="345" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_tour_id_key" value="PK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8edf3;strokeColor=#82b366;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_tour">
+          <mxGeometry x="0" y="36" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_tour_id" value="tour_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_tour">
+          <mxGeometry x="58" y="36" width="287" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_operator_id_key" value="FK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eaf3ff;strokeColor=#82b366;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_tour">
+          <mxGeometry x="0" y="64" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_operator_id" value="operator_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_tour">
+          <mxGeometry x="58" y="64" width="287" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_tour_name_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#82b366;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_tour">
+          <mxGeometry x="0" y="92" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_tour_name" value="tour_name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_tour">
+          <mxGeometry x="58" y="92" width="287" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_country_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#82b366;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_tour">
+          <mxGeometry x="0" y="120" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_country" value="country" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_tour">
+          <mxGeometry x="58" y="120" width="287" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_city_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#82b366;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_tour">
+          <mxGeometry x="0" y="148" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_city" value="city" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_tour">
+          <mxGeometry x="58" y="148" width="287" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_start_date_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#82b366;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_tour">
+          <mxGeometry x="0" y="176" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_start_date" value="start_date" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_tour">
+          <mxGeometry x="58" y="176" width="287" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_end_date_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#82b366;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_tour">
+          <mxGeometry x="0" y="204" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_end_date" value="end_date" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_tour">
+          <mxGeometry x="58" y="204" width="287" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_price_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#82b366;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_tour">
+          <mxGeometry x="0" y="232" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tour_price" value="price" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_tour">
+          <mxGeometry x="58" y="232" width="287" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_booking" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="940" y="330" width="370" height="204" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_header" value="Booking" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1.6;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="grp_booking">
+          <mxGeometry x="0" y="0" width="370" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_booking_id_key" value="PK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8edf3;strokeColor=#d6b656;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_booking">
+          <mxGeometry x="0" y="36" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_booking_id" value="booking_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_booking">
+          <mxGeometry x="58" y="36" width="312" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_client_id_key" value="FK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eaf3ff;strokeColor=#d6b656;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_booking">
+          <mxGeometry x="0" y="64" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_client_id" value="client_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_booking">
+          <mxGeometry x="58" y="64" width="312" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_tour_id_key" value="FK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eaf3ff;strokeColor=#d6b656;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_booking">
+          <mxGeometry x="0" y="92" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_tour_id" value="tour_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_booking">
+          <mxGeometry x="58" y="92" width="312" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_employee_id_key" value="FK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eaf3ff;strokeColor=#d6b656;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_booking">
+          <mxGeometry x="0" y="120" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_employee_id" value="employee_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_booking">
+          <mxGeometry x="58" y="120" width="312" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_order_date_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#d6b656;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_booking">
+          <mxGeometry x="0" y="148" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_order_date" value="order_date" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_booking">
+          <mxGeometry x="58" y="148" width="312" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_status_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#d6b656;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_booking">
+          <mxGeometry x="0" y="176" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_status" value="status" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_booking">
+          <mxGeometry x="58" y="176" width="312" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_employee" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1475" y="150" width="290" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_header" value="Employee" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1.6;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="grp_employee">
+          <mxGeometry x="0" y="0" width="290" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_employee_id_key" value="PK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8edf3;strokeColor=#b85450;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_employee">
+          <mxGeometry x="0" y="36" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_employee_id" value="employee_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_employee">
+          <mxGeometry x="58" y="36" width="232" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_last_name_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#b85450;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_employee">
+          <mxGeometry x="0" y="64" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_last_name" value="last_name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_employee">
+          <mxGeometry x="58" y="64" width="232" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_first_name_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#b85450;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_employee">
+          <mxGeometry x="0" y="92" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_first_name" value="first_name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_employee">
+          <mxGeometry x="58" y="92" width="232" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_position_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#b85450;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_employee">
+          <mxGeometry x="0" y="120" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_position" value="position" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_employee">
+          <mxGeometry x="58" y="120" width="232" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_phone_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#b85450;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_employee">
+          <mxGeometry x="0" y="148" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_phone" value="phone" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_employee">
+          <mxGeometry x="58" y="148" width="232" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_payment" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1475" y="570" width="290" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_header" value="Payment" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.6;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="grp_payment">
+          <mxGeometry x="0" y="0" width="290" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_payment_id_key" value="PK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8edf3;strokeColor=#9673a6;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_payment">
+          <mxGeometry x="0" y="36" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_payment_id" value="payment_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_payment">
+          <mxGeometry x="58" y="36" width="232" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_booking_id_key" value="FK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eaf3ff;strokeColor=#9673a6;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_payment">
+          <mxGeometry x="0" y="64" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_booking_id" value="booking_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_payment">
+          <mxGeometry x="58" y="64" width="232" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_payment_date_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#9673a6;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_payment">
+          <mxGeometry x="0" y="92" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_payment_date" value="payment_date" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_payment">
+          <mxGeometry x="58" y="92" width="232" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_amount_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#9673a6;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_payment">
+          <mxGeometry x="0" y="120" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_amount" value="amount" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_payment">
+          <mxGeometry x="58" y="120" width="232" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_payment_method_key" value="—" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f8fa;strokeColor=#9673a6;strokeWidth=0.8;fontSize=11;fontStyle=1;align=center;verticalAlign=middle;fontColor=#374151;" vertex="1" parent="grp_payment">
+          <mxGeometry x="0" y="148" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_payment_method" value="payment_method" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=0.8;fontSize=12;align=left;verticalAlign=middle;spacingLeft=8;fontColor=#1f2937;" vertex="1" parent="grp_payment">
+          <mxGeometry x="58" y="148" width="232" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_client_booking" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4b5563;strokeWidth=1.7;startArrow=none;endArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="client_client_id" target="booking_client_id">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="205" />
+              <mxPoint x="650" y="408" />
+              <mxPoint x="900" y="408" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="one_client" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="343" y="190" width="22" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="many_booking_client" value="N" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="912" y="395" width="22" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_operator_tour" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4b5563;strokeWidth=1.7;startArrow=none;endArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="operator_operator_id" target="tour_operator_id">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="one_operator" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="363" y="610" width="22" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="many_tour_operator" value="N" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="448" y="612" width="22" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_tour_booking" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4b5563;strokeWidth=1.7;startArrow=none;endArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="tour_tour_id" target="booking_tour_id">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="592" />
+              <mxPoint x="870" y="436" />
+              <mxPoint x="920" y="436" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="one_tour" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="818" y="578" width="22" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="many_booking_tour" value="N" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="915" y="423" width="22" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_employee_booking" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4b5563;strokeWidth=1.7;startArrow=none;endArrow=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="employee_employee_id" target="booking_employee_id">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1380" y="200" />
+              <mxPoint x="1380" y="464" />
+              <mxPoint x="1330" y="464" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="one_employee" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="185" width="22" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="many_booking_employee" value="N" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="1318" y="450" width="22" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_booking_payment" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4b5563;strokeWidth=1.7;startArrow=none;endArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="booking_booking_id" target="payment_booking_id">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1395" y="380" />
+              <mxPoint x="1395" y="634" />
+              <mxPoint x="1455" y="634" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="one_booking" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="365" width="22" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="many_payment" value="N" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="620" width="22" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="&lt;b&gt;Обозначения:&lt;/b&gt; PK — первичный ключ; FK — внешний ключ; 1:N — связь «один ко многим»." style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#4b5563;" vertex="1" parent="1">
+          <mxGeometry x="60" y="850" width="1150" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="normal_form" value="3НФ: все поля атомарны; неключевые атрибуты зависят от первичного ключа своей таблицы; транзитивных зависимостей нет." style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#4b5563;" vertex="1" parent="1">
+          <mxGeometry x="60" y="878" width="1500" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

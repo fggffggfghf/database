@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-10T10:45:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="tourism-conceptual-er" name="ER — Туристическая фирма">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" /><mxCell id="1" parent="0" />
+        <mxCell id="title" value="Концептуальная ER-диаграмма «Туристическая фирма (агентство)»" style="text;html=1;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#1f2937;" vertex="1" parent="1"><mxGeometry x="300" y="25" width="1000" height="45" as="geometry" /></mxCell>
+
+        
+        <mxCell id="client" value="&lt;b&gt;Клиент&lt;/b&gt;&lt;br&gt;ID клиента&lt;br&gt;Фамилия&lt;br&gt;Имя&lt;br&gt;Телефон&lt;br&gt;Электронная почта" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1"><mxGeometry x="70" y="185" width="190" height="150" as="geometry" /></mxCell>
+        <mxCell id="tour" value="&lt;b&gt;Тур&lt;/b&gt;&lt;br&gt;ID тура&lt;br&gt;Название тура&lt;br&gt;Страна&lt;br&gt;Город&lt;br&gt;Дата начала&lt;br&gt;Дата окончания&lt;br&gt;Стоимость" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1"><mxGeometry x="70" y="490" width="190" height="175" as="geometry" /></mxCell>
+        <mxCell id="booking" value="&lt;b&gt;Заказ&lt;/b&gt;&lt;br&gt;ID заказа&lt;br&gt;Дата оформления заказа&lt;br&gt;Статус заказа" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1"><mxGeometry x="660" y="350" width="230" height="135" as="geometry" /></mxCell>
+        <mxCell id="employee" value="&lt;b&gt;Сотрудник&lt;/b&gt;&lt;br&gt;ID сотрудника&lt;br&gt;Фамилия&lt;br&gt;Имя&lt;br&gt;Должность&lt;br&gt;Телефон" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1"><mxGeometry x="1320" y="180" width="200" height="150" as="geometry" /></mxCell>
+        <mxCell id="payment" value="&lt;b&gt;Оплата&lt;/b&gt;&lt;br&gt;ID оплаты&lt;br&gt;Дата оплаты&lt;br&gt;Сумма оплаты&lt;br&gt;Способ оплаты" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1"><mxGeometry x="1320" y="505" width="200" height="130" as="geometry" /></mxCell>
+
+        <mxCell id="operator" value="&lt;b&gt;Туроператор&lt;/b&gt;&lt;br&gt;ID туроператора&lt;br&gt;Название компании&lt;br&gt;Телефон&lt;br&gt;Электронная почта" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=13;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1"><mxGeometry x="340" y="105" width="220" height="125" as="geometry" /></mxCell>
+
+        
+        <mxCell id="r_client_booking" value="оформляет" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5ff;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1"><mxGeometry x="380" y="220" width="110" height="70" as="geometry" /></mxCell>
+        <mxCell id="r_tour_booking" value="входит в" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5ff;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1"><mxGeometry x="380" y="535" width="110" height="70" as="geometry" /></mxCell>
+        <mxCell id="r_employee_booking" value="оформляет" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5ff;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1090" y="220" width="110" height="70" as="geometry" /></mxCell>
+        <mxCell id="r_booking_payment" value="оплачивается" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5ff;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1010" y="535" width="110" height="70" as="geometry" /></mxCell>
+
+        <mxCell id="r_operator_tour" value="предлагает" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5ff;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1"><mxGeometry x="345" y="340" width="115" height="70" as="geometry" /></mxCell>
+
+        
+        <mxCell id="e_operator_r" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;startArrow=none;html=1;strokeColor=#555555;fontSize=13;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="operator" target="r_operator_tour"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_r_tour_operator" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;startArrow=none;html=1;strokeColor=#555555;fontSize=13;exitX=0;exitY=0.5;entryX=1;entryY=0.25;" edge="1" parent="1" source="r_operator_tour" target="tour"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="300" y="375" /><mxPoint x="300" y="535" /></Array></mxGeometry></mxCell>
+
+        
+        <mxCell id="e_client_r" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;startArrow=none;html=1;strokeColor=#555555;fontSize=13;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="client" target="r_client_booking"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_r_booking_client" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;startArrow=none;html=1;strokeColor=#555555;fontSize=13;exitX=1;exitY=0.5;entryX=0;entryY=0.3;" edge="1" parent="1" source="r_client_booking" target="booking"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="570" y="255" /><mxPoint x="570" y="391" /></Array></mxGeometry></mxCell>
+
+        
+        <mxCell id="e_tour_r" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;startArrow=none;html=1;strokeColor=#555555;fontSize=13;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="tour" target="r_tour_booking"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_r_booking_tour" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;startArrow=none;html=1;strokeColor=#555555;fontSize=13;exitX=1;exitY=0.5;entryX=0;entryY=0.75;" edge="1" parent="1" source="r_tour_booking" target="booking"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="570" y="570" /><mxPoint x="570" y="451" /></Array></mxGeometry></mxCell>
+
+        
+        <mxCell id="e_employee_r" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;startArrow=none;html=1;strokeColor=#555555;fontSize=13;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="employee" target="r_employee_booking"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_r_booking_employee" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;startArrow=none;html=1;strokeColor=#555555;fontSize=13;exitX=0;exitY=0.5;entryX=1;entryY=0.3;" edge="1" parent="1" source="r_employee_booking" target="booking"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="990" y="255" /><mxPoint x="990" y="391" /></Array></mxGeometry></mxCell>
+
+        
+        <mxCell id="e_booking_r" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;startArrow=none;html=1;strokeColor=#555555;fontSize=13;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" edge="1" parent="1" source="booking" target="r_booking_payment"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="960" y="451" /><mxPoint x="960" y="570" /></Array></mxGeometry></mxCell>
+        <mxCell id="e_r_payment" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=none;startArrow=none;html=1;strokeColor=#555555;fontSize=13;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="r_booking_payment" target="payment"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="legend" value="&lt;b&gt;Количество сущностей: 6.&lt;/b&gt; Прямоугольник — сущность; ромб — связь; 1 и N — кратность связи (один ко многим)." style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#555555;" vertex="1" parent="1"><mxGeometry x="70" y="750" width="1350" height="35" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

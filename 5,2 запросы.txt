@@ -1,0 +1,32 @@
+
+-- 1. Вывод всех клиентов
+SELECT * FROM Client;
+
+-- 2. Бронирования с информацией о клиентах и турах
+SELECT
+    Booking.booking_id,
+    Client.last_name,
+    Client.first_name,
+    Tour.tour_name,
+    Tour.country,
+    Booking.order_date,
+    Booking.status
+FROM Booking
+JOIN Client ON Booking.client_id = Client.client_id
+JOIN Tour ON Booking.tour_id = Tour.tour_id;
+
+-- 3. Туры дороже 90000 рублей
+SELECT *
+FROM Tour
+WHERE price > 90000;
+
+-- 4. Количество бронирований
+SELECT COUNT(*) AS total_bookings
+FROM Booking;
+
+-- 5. Сумма оплат по каждому бронированию
+SELECT
+    booking_id,
+    SUM(amount) AS total_payment
+FROM Payment
+GROUP BY booking_id;
